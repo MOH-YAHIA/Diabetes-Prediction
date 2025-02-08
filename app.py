@@ -1,9 +1,16 @@
 import streamlit as st
 import numpy as np
 import joblib
+import os
 
-# Load the trained model
-rf_model = joblib.load(r"D:\track\diabetes\diabetes_model.joblib")
+# Get the current directory (where app.py is located)
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Define the model's relative path
+model_path = os.path.join(current_dir, "diabetes_model.joblib")
+
+# Load the model
+rf_model = joblib.load(model_path)
 
 # Streamlit app title
 st.title("Diabetes Prediction App for Females (Accuracy: 86%)")
