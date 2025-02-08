@@ -12,7 +12,7 @@ The trained model is deployed on Hugging Face for easy access and inference:
 [Try it on Hugging Face](https://huggingface.co/spaces/Myahia/Diabetes-Prediction)  
 
 ## Technologies Used  
-- Python (Pandas, NumPy, Scikit-Learn)  
+- Python (Pandas, NumPy, Scikit-Learn, Matplotlib, Seaborn)  
 - Machine Learning (Logistic Regression, Random Forest)
 - Random Over-Sampling (to handle class imbalance) 
 - Streamlit (for deployment)  
